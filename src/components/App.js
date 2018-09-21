@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import NavBar from './NavBar';
 import ProjectCard from './ProjectCard';
 import About from './About';
-import SocialContainer from './SocialContainer'
+import SocialRow from './SocialRow';
+import Home from './Home';
 
 import '../css/App.css';
 
@@ -44,16 +45,12 @@ class App extends Component {
 
   render() {
 
-  const socialContents = [
-    {service: 'facebook', link: 'https://www.facebook.com/kevin.simpson.547'},
-    {service: 'twitter', link: 'https://twitter.com/relasine'},
-    {service: 'linkedin', link: 'https://www.linkedin.com/in/kevinjohnsimpson'},
-    {service: 'instagram', link: 'https://www.instagram.com/kevinjohnsimpson/'},
-    {service: 'soundcloud', link: 'https://soundcloud.com/spekkiomusic'},
-    {service: 'github', link: 'https://www.github.com/relasine'},
-    {service: 'twitch', link: 'https://www.twitch.tv/relasine'},
-    {service: 'codepen', link: 'https://codepen.io/relasine/'}
-  ] 
+  const socialRowData = [
+      {service: 'twitter', link: 'https://twitter.com/relasine'},
+      {service: 'linkedin', link: 'https://www.linkedin.com/in/kevinjohnsimpson'},
+      {service: 'instagram', link: 'https://www.instagram.com/kevinjohnsimpson/'},
+      {service: 'github', link: 'https://www.github.com/relasine'},
+    ] 
 
   const cardData1 = {
     classLabel: 'project-card nimbus-card',
@@ -79,11 +76,15 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar pageCall={this.pageCall}/>
+        <main className={this.state.homeState}>
+          <Home />
+          <SocialRow data={socialRowData} /> 
+        </main>
         <main className={this.state.projectState}>
           <header className="project-header">
             <div className="project-header-lil-container">
               <h1 className="project-header-title">Projects</h1>
-              <p className="project-header-text">I make apps and websites for the internet. You can see some of them here. If you are interested, contact me and we will discuss it.</p>
+              <p className="project-header-text">A collection of apps and webpages I have created using HTML, CSS, JavaScript, and React.</p>
             </div>
           </header>
           <section className="project-card-container">
@@ -91,10 +92,6 @@ class App extends Component {
             <ProjectCard cardData={cardData2} />
             <ProjectCard cardData={cardData3} />
           </section>
-          <SocialContainer data={socialContents} />
-        </main>
-        <main className={this.state.aboutState}>
-              <About />
         </main>
       </div>
     );

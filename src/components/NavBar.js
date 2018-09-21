@@ -19,15 +19,16 @@ export default class NavBar extends Component {
   navButtonToggle() {
     if (this.state.navButtonState === 'nav-buttons') {
       this.setState({
-        navButtonState: 'nav-buttons activeButtons'
+        navButtonState: 'nav-buttons active-buttons'
       }) 
     } else {
       this.setState({
         navButtonState: 'nav-buttons'
       }) 
     }
-    
   }
+
+
 
   render() {
 

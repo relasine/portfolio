@@ -10,9 +10,6 @@ function NavButtons(props) {
         <li className="link-item" onClick={() => {props.pageCall('home')}}>
           <p className="link">Home</p>
         </li>
-        <li className="link-item" onClick={() => {props.pageCall('about')}}>
-          <p className="link">About</p>
-        </li>
         <li className="link-item" onClick={() => {props.pageCall('projects')}}>
           <p className="link">Projects</p>
         </li>

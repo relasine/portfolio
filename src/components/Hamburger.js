@@ -28,6 +28,12 @@ export default class Hamburger extends Component {
     this.props.navButtonToggle()
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.toggleHamburger();
+    }, 1500)
+  }
+
   render() {
     
     return (
