@@ -8,3 +8,10 @@ body {
   background-size: 2000px 1099px;
   background-repeat: no-repeat;
 }
+
+
+@media (max-width: 1000px) {
+  body {
+    background-size: 3000px 1649px;
+  }
+}
