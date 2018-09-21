@@ -68,7 +68,7 @@ class App extends Component {
   const cardData3 = {
     classLabel: 'project-card autocomplete-card',
     title: 'Auto-Complete',
-    body: 'An NPM module for for auto-complete functionality. Based on a pre-trie using OOP JavaScript. Is deployed within the Nimbus Weather app for city selection',
+    body: 'An NPM module for auto-complete functionality. Based on a pre-trie using OOP JavaScript. Is deployed within the Nimbus Weather app for city selection',
     link: 'https://www.github.com/relasine/auto-complete'
   }
     
