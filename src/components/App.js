@@ -12,12 +12,13 @@ class App extends Component {
     super()
 
     this.state = {
-      homeState: 'active-main home-main',
+      homeState: 'inactive-main home-main',
       aboutState: 'inactive-main about-main',
       projectState: 'inactive-main project-main'
     }
 
     this.pageCall = this.pageCall.bind(this);
+    this.imageLoaded = this.imageLoaded.bind(this);
   }
 
   pageCall(call) {
@@ -40,6 +41,14 @@ class App extends Component {
         projectState: 'active-main project-main'
       })
     }
+  }
+
+  imageLoaded() {
+    this.setState({
+        homeState: 'active-main home-main',
+        aboutState: 'inactive-main about-main',
+        projectState: 'inactive-main project-main'  
+    })
   }
 
   render() {
@@ -76,7 +85,7 @@ class App extends Component {
       <div className="App">
         <NavBar pageCall={this.pageCall}/>
         <main className={this.state.homeState}>
-          <Home />
+          <Home imageLoaded={this.imageLoaded}/>
           <SocialRow data={socialRowData} /> 
         </main>
         <main className={this.state.projectState}>
