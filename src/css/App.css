@@ -45,6 +45,8 @@
 
 .project-header-text {
   padding-bottom: 1rem;
+  overflow: hidden;
+
 }
 
 .project-card-container {

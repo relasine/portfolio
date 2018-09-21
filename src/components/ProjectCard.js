@@ -8,7 +8,8 @@ function ProjectCard(props) {
       <article className={props.cardData.classLabel}>
         <p className='card-body'>{props.cardData.body}</p>
         <div className='github-button'>
-          <div className="github-logo"></div>
+          <div 
+            className="github-logo"></div>
           <a href={props.cardData.link}>GitHub Repo</a>
         </div>
       </article>

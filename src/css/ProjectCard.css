@@ -53,7 +53,7 @@
   width: 24px;
   padding-bottom: 2px;
   margin-left: 10px;
-  background: url('/%PUBLIC_URL%/github-logo-white.png');
+  background: url('./github-logo-white.png');
   background-repeat: no-repeat;
 }
 
@@ -82,18 +82,18 @@
 }
 
 .github-button:hover .github-logo {
-  background: url('/%PUBLIC_URL%/github-logo-bluegrey.png');
+  background: url('./github-logo-bluegrey.png');
   background-repeat: no-repeat;
 }
 
 .nimbus-card:before {
-  background: center / cover url('/%PUBLIC_URL%/nimbus.jpg');
+  background: center / cover url('./nimbus.jpg');
 }
 
 .snake-card:before {
-  background: center / cover url('/%PUBLIC_URL%/snake.jpg');
+  background: center / cover url('./snake.jpg');
 }
 
 .autocomplete-card:before {
-  background: center / cover url('/%PUBLIC_URL%/autocomplete.png');
+  background: center / cover url('./autocomplete.png');
 }
