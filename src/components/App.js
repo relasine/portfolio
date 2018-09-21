@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import ProjectCard from './ProjectCard';
 import SocialRow from './SocialRow';
 import Home from './Home';
+import Loading from './Loading'
 
 import '../css/App.css';
 
@@ -12,6 +13,7 @@ class App extends Component {
     super()
 
     this.state = {
+      loadingState: 'loader',
       homeState: 'inactive-main home-main',
       aboutState: 'inactive-main about-main',
       projectState: 'inactive-main project-main'
@@ -45,6 +47,7 @@ class App extends Component {
 
   imageLoaded() {
     this.setState({
+        loading: 'inactive-loading',
         homeState: 'active-main home-main',
         aboutState: 'inactive-main about-main',
         projectState: 'inactive-main project-main'  
@@ -84,6 +87,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar pageCall={this.pageCall}/>
+        <Loading loadClass={this.state.loading}/>
         <main className={this.state.homeState}>
           <Home imageLoaded={this.imageLoaded}/>
           <SocialRow data={socialRowData} /> 
