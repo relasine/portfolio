@@ -1,0 +1,40 @@
+.hamburger {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 3
+}
+
+.hamburger span {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #262626;
+  display: block;
+  top: calc(50% - 1px);
+  left: calc(50% - 15px);
+  transition: .2s;
+}
+
+.hamburger span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.hamburger span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  transform: translateX(-60px);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(0px) rotate(45deg);
+}

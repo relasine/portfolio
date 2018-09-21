@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.App {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.project-main,
+.about-main {
+  left: 0;
+  right: 0;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  position: absolute;
+  transition: .5s;
+  width: 100%;
+}
+
+.project-main {
+
+}
+
+.project-header {
+  grid-column: 1/4;
+  background: #3F4354;
+  color: #fff;
+  margin: auto;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+}
+
+.project-header-title {
+  margin-top: 0;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 40px;
+}
+
+.project-header-lil-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.project-header-text {
+  padding-bottom: 1rem;
+}
+
+.project-card-container {
+  margin: auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inactive-main {
+  left: 100%;
+  opacity: 0;
+}
