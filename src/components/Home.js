@@ -11,7 +11,7 @@ function Home(props) {
         src="head-shot-square.jpg" 
         alt="kevin-simpson" 
         onLoad={() => {
-          props.imageLoaded();
+          setTimeout(function() { props.imageLoaded() }, 2000);
         }}
       />
       <h4 className="home-subtitle">front-end engineer, 8th-level bard</h4>

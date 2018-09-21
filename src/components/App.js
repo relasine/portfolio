@@ -47,10 +47,8 @@ class App extends Component {
 
   imageLoaded() {
     this.setState({
-        loading: 'inactive-loading',
+        loadingState: 'inactive-loading',
         homeState: 'active-main home-main',
-        aboutState: 'inactive-main about-main',
-        projectState: 'inactive-main project-main'  
     })
   }
 
@@ -87,7 +85,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar pageCall={this.pageCall}/>
-        <Loading loadClass={this.state.loading}/>
+        <Loading loadClass={this.state.loadingState}/>
         <main className={this.state.homeState}>
           <Home imageLoaded={this.imageLoaded}/>
           <SocialRow data={socialRowData} /> 

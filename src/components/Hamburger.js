@@ -31,7 +31,7 @@ export default class Hamburger extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.toggleHamburger();
-    }, 1500)
+    }, 3000)
   }
 
   render() {
