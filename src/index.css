@@ -2,5 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #efefef;
+  background: url('./css/images/clouds-cold-dark.jpg');
+  /*background-size: cover;*/
+  background-position: 50% 0%;
+  background-size: 2000px 1099px;
+  background-repeat: no-repeat;
 }
