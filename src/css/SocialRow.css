@@ -26,11 +26,11 @@
 }
 
 .social-row ul li i {
-  color: #000;
+  color: #373941;
 }
 
 .social-row ul li:hover {
-  background: #2196f3;
+  background: #80BDAE;
   cursor: pointer;
 }
 

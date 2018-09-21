@@ -4,7 +4,7 @@
   width: 300px;
   height: 300px;
   overflow: hidden;
-  background: #3F4354;
+  background: #373941;
 }
 
 .project-card:before {
@@ -25,20 +25,21 @@
   text-decoration: none;
   margin-left: 8px;
   margin-right: 10px;
-  color: #fff;
+  color: #E3F6F1;
 }
 
 .card-title,
 .card-body {
   margin-left: 1rem;
   margin-right: 1rem;
-  color: #fff;
+  color: #E3F6F1;
 }
 
 .card-title {
   text-align: center;
   padding-top: 1rem;
   height: 40px;
+  color: #fff;
 }
 
 .card-body {
@@ -53,7 +54,7 @@
   width: 24px;
   padding-bottom: 2px;
   margin-left: 10px;
-  background: url('./github-logo-white.png');
+  background: url('./images/github-logo-white.png');
   background-repeat: no-repeat;
 }
 
@@ -70,30 +71,29 @@
   font-size: 1.2rem;
   margin-top: 0;
   padding-top: 0;
-  color: #3F4354;
 }
 
 .github-button:hover {
-  background: #fff;
+  background: #E3F6F1;
 }
 
 .github-button:hover a {
-  color: #3F4354;
+  color: #373941;
 }
 
 .github-button:hover .github-logo {
-  background: url('./github-logo-bluegrey.png');
+  background: url('./images/github-logo-bluegrey.png');
   background-repeat: no-repeat;
 }
 
 .nimbus-card:before {
-  background: center / cover url('./nimbus.jpg');
+  background: center / cover url('./images/nimbus.jpg');
 }
 
 .snake-card:before {
-  background: center / cover url('./snake.jpg');
+  background: center / cover url('./images/snake.jpg');
 }
 
 .autocomplete-card:before {
-  background: center / cover url('./autocomplete.png');
+  background: center / cover url('./images/autocomplete.png');
 }

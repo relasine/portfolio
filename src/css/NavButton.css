@@ -8,7 +8,7 @@
   transition: 0.5s;
   transform: translateX(-100%);
   z-index: 2;
-  color: #3F4354;
+  color: #373941;
 }
 
 .empty-item {
@@ -42,7 +42,7 @@
   font-family: sans-serif;;
   text-transform: uppercase;
   font-weight: bold;
-  color: #3F4354;
+  color: #373941;
   display: block;
   transition: .5s;
   background-color: #fff;
@@ -54,7 +54,7 @@
 
 .link:hover {
   color: #fff;
-  background: #3F4354;
+  background: #373941;
   cursor: pointer;
 
 }
