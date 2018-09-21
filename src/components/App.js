@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import NavBar from './NavBar';
 import ProjectCard from './ProjectCard';
-import About from './About';
 import SocialRow from './SocialRow';
 import Home from './Home';
 
