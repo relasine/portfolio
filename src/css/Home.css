@@ -43,6 +43,18 @@
   font-size: 18px;
 }
 
+.logo-container {
+  margin: 2rem auto;
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 850px) {
+  .logo-container {
+    position: static;
+  }
+}
+
 @media (max-width: 650px) {
   .home-interior {
     grid-template-columns: 1fr;
@@ -67,7 +79,13 @@
   }
   .home-title {}
   .home-text {
-    width: 318px;
+    width: 250px;
     margin: 1rem;
   }
+}
+
+@media (max-width: 400px) {
+  .home-interior {
+    width: 300px;
+  }  
 }
