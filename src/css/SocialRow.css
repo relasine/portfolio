@@ -38,3 +38,8 @@
   color: #fff;
 }
 
+.social-row ul li .fa {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
