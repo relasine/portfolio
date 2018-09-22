@@ -62,6 +62,8 @@
   overflow: hidden;
 }
 
+
+
 @media (max-width: 1000px) {
   .project-card-container {
     display: grid;

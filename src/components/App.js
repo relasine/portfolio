@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard';
 import SocialRow from './SocialRow';
 import Home from './Home';
 import Loading from './Loading'
+import Logo from './Logo'
 
 import '../css/App.css';
 
@@ -59,6 +60,7 @@ class App extends Component {
       {service: 'linkedin', link: 'https://www.linkedin.com/in/kevinjohnsimpson'},
       {service: 'instagram', link: 'https://www.instagram.com/kevinjohnsimpson/'},
       {service: 'github', link: 'https://www.github.com/relasine'},
+      {service: 'envelope-o', link: 'mailto:simpsonkevinjohn@gmail.com'}
     ] 
 
   const cardData1 = {
@@ -89,6 +91,7 @@ class App extends Component {
         <main className={this.state.homeState}>
           <Home imageLoaded={this.imageLoaded}/>
           <SocialRow data={socialRowData} /> 
+          <Logo />
         </main>
         <main className={this.state.projectState}>
           <header className="project-header">

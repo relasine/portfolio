@@ -1,0 +1,21 @@
+.logo {
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  margin: auto;
+  border: 2px solid #E3F6F1;
+}
+
+.logo span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  float: left;
+}
+
+.logo span:nth-child(1),
+.logo span:nth-child(4),
+.logo span:nth-child(2) {
+  background: #E3F6F1;
+  border: solid .1px #e3f6f1;
+}

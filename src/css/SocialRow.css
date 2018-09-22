@@ -1,7 +1,7 @@
 @import '../font-awesome-4.7.0/css/font-awesome.min.css';
 
 .social-row {
-  width: 232px;
+  width: 290px;
   margin: auto;
 }
 
@@ -36,4 +36,10 @@
 
 .social-row ul li:hover i {
   color: #fff;
+}
+
+.social-row ul li .fa {
+  margin: 0;
+  height: 50px;
+  width: 50px;
 }
