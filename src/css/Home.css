@@ -60,6 +60,7 @@
     grid-template-columns: 1fr;
     width: 350px;
   }
+
   .home-pic {
     grid-column: 1;
     grid-row: 2;
@@ -77,15 +78,21 @@
   .home-title {
     margin-bottom: 1rem;
   }
-  .home-title {}
   .home-text {
-    width: 250px;
-    margin: 1rem;
+    width: 300px;
+    margin: 1rem auto;
   }
 }
 
 @media (max-width: 400px) {
   .home-interior {
     width: 300px;
-  }  
+  }
+  .home-text {
+    width: 250px;
+    font-size: 14px;
+  }
+  .home-subtitle {
+    font-size: 16px;
+  }
 }

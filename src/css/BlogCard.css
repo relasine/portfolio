@@ -1,0 +1,46 @@
+.blog-article {
+  box-sizing: border-box;
+  width: 300px;
+  height: 430px;
+  background: #fff;
+  margin: auto;
+  box-shadow: 2px 2px #373941;
+}
+
+.blog-article:hover {
+  cursor: pointer;
+}
+
+.blog-article h2,
+.blog-article h4,
+.blog-article h3,
+.blog-article p {
+  padding: 0 1rem;
+}
+
+.blog-article h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.blog-article h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.blog-article h4 {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.blog-article .article-body-preview p {
+  font-size: 12px;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .blog-article {
+    margin: 1rem auto;
+  }
+}
