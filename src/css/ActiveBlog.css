@@ -1,7 +1,12 @@
 .pop-up-article {
   position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
   background: #fff;
-  margin: 0 2rem 2rem;
+  max-width: 1000px;
+  margin: auto;
   z-index: 1;
   box-shadow: 2px 2px #373941;
 }
@@ -34,4 +39,10 @@
 
 .pop-up-article h3 {
   font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .pop-up-article {
+    margin: 0 2rem 2rem;
+  }
 }
