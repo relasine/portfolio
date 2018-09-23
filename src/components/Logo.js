@@ -5,17 +5,7 @@ import '../css/Logo.css'
 function Logo() {
   return (
     <aside className="logo-container">
-      <div className='logo'>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-      </div>
+      <img src="./logo-no-back.png" alt="kevin-simpson-logo" />
     </aside>
   )
 }

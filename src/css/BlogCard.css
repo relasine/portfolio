@@ -1,8 +1,10 @@
 .blog-article {
   box-sizing: border-box;
   width: 300px;
+  height: 430px;
   background: #fff;
   margin: auto;
+  box-shadow: 2px 2px #373941;
 }
 
 .blog-article:hover {

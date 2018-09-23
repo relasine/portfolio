@@ -1,0 +1,37 @@
+.pop-up-article {
+  position: absolute;
+  background: #fff;
+  margin: 0 2rem 2rem;
+  z-index: 1;
+  box-shadow: 2px 2px #373941;
+}
+
+.blog-article-header-image i {
+  margin: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.blog-article-header-image i:hover {
+  color: #81BEAF;
+  cursor: pointer;
+}
+
+.pop-up-article h1,
+.pop-up-article h2,
+.pop-up-article h3,
+.pop-up-article p {
+  margin: 1rem;
+}
+
+.pop-up-article h1 {
+  font-size: 2rem;
+}
+
+.pop-up-article h2 {
+  text-transform: uppercase;
+}
+
+.pop-up-article h3 {
+  font-size: 1rem;
+}

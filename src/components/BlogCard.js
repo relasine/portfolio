@@ -16,7 +16,7 @@ function BlogCard(props) {
 
   const imageStyle = {
     background: `url(${props.data.background})`,
-    backgroundSize: 'contain',
+    backgroundSize: 'cover',
     width: '300px',
     height: '200px',
     margin: '0'

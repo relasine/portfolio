@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import BlogCard from './BlogCard'
+import ActiveBlog from './ActiveBlog'
 
 import '../css/BlogSection.css'
 
@@ -10,34 +11,26 @@ export default class BlogSection extends Component {
 
     this.state = {
       currentPage: 1,
-      activeBlogEntry: undefined
+      activeBlogEntry: undefined,
+      blogContainerState: 'blog-container'
     }
 
     this.generateArticle = this.generateArticle.bind(this);
+    this.closeArticle = this.closeArticle.bind(this);
   }
 
   generateArticle(article) {
-    const PopUpArticle = React.createClass({
-      render: () => {
-        return (
-          <article className="pop-up-article">
-            <h1>{article.title}</h1>
-            <h2>{article.author}</h2>
-            <h3>{article.date}</h3>
-            {article.body.map((paragraph) => {
-              return (
-                <p>{paragraph}</p>
-              );
-            })}
-          </article>
-        );
-      }
+    this.setState({
+      activeBlogEntry: article,
+      blogContainerState: 'blog-container blog-container-hidden'
     });
+  }
 
-    React.render(
-      <PopUpArticle />,
-      document.querySelector('.blog-container')
-    );
+  closeArticle() {
+    this.setState({
+      activeBlogEntry: undefined,
+      blogContainerState: 'blog-container'
+    })
   }
 
   render() {
@@ -47,7 +40,13 @@ export default class BlogSection extends Component {
         <header className="blog-header">
           <h1 className="blog-header-title">Blog</h1>
         </header>
-        <div className="blog-container">
+        {this.state.activeBlogEntry &&
+            <ActiveBlog 
+              data={this.state.activeBlogEntry}
+              closeArticle={this.closeArticle}
+            />
+        }
+        <div className={this.state.blogContainerState}>
           {this.props.blogEntries.map((blogEntry) => {
             return <BlogCard 
               key={blogEntry.title} 
