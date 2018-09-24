@@ -7,7 +7,7 @@ function NavButtons(props) {
     <div className={props.navButtonState}>
       <ul className="link-list">
         <li className="empty-item"></li>
-        <li className="link-item" onClick={() => {props.pageCall('home')}}>
+        <li className="link-item" onClick={() => {props.pageCall('home')}}> 
           <p className="link">Home</p>
         </li>
         <li className="link-item" onClick={() => {props.pageCall('blog')}}>
