@@ -129,6 +129,13 @@ class App extends Component {
     body: 'An NPM module for auto-complete functionality. Based on a pre-trie using OOP JavaScript. Is deployed within the Nimbus Weather app for city selection',
     link: 'https://www.github.com/relasine/auto-complete'
   }
+
+  const cardData4 = {
+    classLabel: 'project-card headcount-card',
+    title: 'Headcount',
+    body: 'This is fundamentally designed to challenge the developer to simultaneously manage multiple React components combined with having to make some difficult decisions about where and how data should be organized, stored, and manipulated.',
+    link: 'https://www.github.com/relasine/headcount2.0'
+  }
     
     return (
       <div className="App">
@@ -154,9 +161,11 @@ class App extends Component {
             </div>
           </header>
           <section className="project-card-container">
+            <ProjectCard cardData={cardData4} />
             <ProjectCard cardData={cardData1} />
             <ProjectCard cardData={cardData2} />
             <ProjectCard cardData={cardData3} />
+
             <Logo />
           </section>
         </main>
