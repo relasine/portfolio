@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.22bee8de.css",
-  "main.css.map": "static/css/main.22bee8de.css.map",
-  "main.js": "static/js/main.ad5d7485.js",
-  "main.js.map": "static/js/main.ad5d7485.js.map",
+  "main.css": "static/css/main.6193f8fb.css",
+  "main.css.map": "static/css/main.6193f8fb.css.map",
+  "main.js": "static/js/main.a62bd22d.js",
+  "main.js.map": "static/js/main.a62bd22d.js.map",
   "static/media/autocomplete.png": "static/media/autocomplete.bf965030.png",
   "static/media/clouds-cold-dark.jpg": "static/media/clouds-cold-dark.1864b066.jpg",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
@@ -12,5 +12,6 @@
   "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
   "static/media/kindercount.png": "static/media/kindercount.0bd13c89.png",
   "static/media/nimbus.jpg": "static/media/nimbus.982b7eda.jpg",
-  "static/media/snake.jpg": "static/media/snake.e48f4ace.jpg"
+  "static/media/snake.jpg": "static/media/snake.e48f4ace.jpg",
+  "static/media/swapibox.png": "static/media/swapibox.48b496ea.png"
 }
