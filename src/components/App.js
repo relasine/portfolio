@@ -168,6 +168,7 @@ class App extends Component {
             </div>
           </header>
           <section className="project-card-container">
+            <ProjectCard cardData={cardData5} />
             <ProjectCard cardData={cardData4} />
             <ProjectCard cardData={cardData1} />
             <ProjectCard cardData={cardData2} />
