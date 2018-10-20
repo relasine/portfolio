@@ -136,6 +136,13 @@ class App extends Component {
     body: 'This is fundamentally designed to challenge the developer to simultaneously manage multiple React components combined with having to make some difficult decisions about where and how data should be organized, stored, and manipulated.',
     link: 'https://www.github.com/relasine/headcount2.0'
   }
+
+  const cardData5 = {
+    classLabel: 'project-card swapi-card',
+    title: 'SWAPIBox',
+    body: 'This is project combines the challenge of nested api calls with finding a unique and modern interface utilizing React and React Router',
+    link: 'https://github.com/relasine/SWAPIBox'
+  }
     
     return (
       <div className="App">

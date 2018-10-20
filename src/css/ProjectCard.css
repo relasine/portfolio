@@ -106,3 +106,7 @@
 .headcount-card:before {
   background: center / cover url('./images/kindercount.png');
 }
+
+.swapi-card:before {
+  background: center / cover url('./images/swapibox.png');
+}
