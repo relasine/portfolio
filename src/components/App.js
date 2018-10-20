@@ -140,7 +140,7 @@ class App extends Component {
   const cardData5 = {
     classLabel: 'project-card swapi-card',
     title: 'SWAPIBox',
-    body: 'This is project combines the challenge of nested api calls with finding a unique and modern interface utilizing React and React Router',
+    body: 'This is project combines the challenge of nested api calls with finding a unique and modern interface utilizing React and React Router. It was built by Kevin Simpson and Tobin Nelson',
     link: 'https://github.com/relasine/SWAPIBox'
   }
     
